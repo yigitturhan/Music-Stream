@@ -43,7 +43,6 @@ void Profile::followProfile(Profile *profile) {
 }
 
 void Profile::unfollowProfile(Profile *profile) {
-    /* TODO */
     LinkedList<Profile*> ll = (*profile).getFollowers();
     Profile *pr = this;
     following.removeNode(profile);
@@ -51,13 +50,11 @@ void Profile::unfollowProfile(Profile *profile) {
 }
 
 void Profile::createPlaylist(const std::string &playlistName) {
-    /* TODO */
     Playlist p(playlistName);
     playlists.insertAtTheEnd(p);
 }
 
 void Profile::deletePlaylist(int playlistId) {
-    /* TODO */
     Node<Playlist> *p = playlists.getFirstNode();
     for(int i=0;i<playlists.getSize();i++){
         if((p->data).getPlaylistId() == playlistId){
@@ -69,7 +66,6 @@ void Profile::deletePlaylist(int playlistId) {
 }
 
 void Profile::addSongToPlaylist(Song *song, int playlistId) {
-    /* TODO */
     Node<Playlist> *p = playlists.getFirstNode();
     for(int i=0;i<playlists.getSize();i++){
         if((p->data).getPlaylistId() == playlistId){
@@ -81,7 +77,6 @@ void Profile::addSongToPlaylist(Song *song, int playlistId) {
 }
 
 void Profile::deleteSongFromPlaylist(Song *song, int playlistId) {
-    /* TODO */
     Node<Playlist> *p = playlists.getFirstNode();
     for(int i=0;i<playlists.getSize();i++){
         if((p->data).getPlaylistId() == playlistId){
@@ -93,7 +88,6 @@ void Profile::deleteSongFromPlaylist(Song *song, int playlistId) {
 }
 
 Playlist *Profile::getPlaylist(int playlistId) {
-    /* TODO */
     Node<Playlist> *p = playlists.getFirstNode();
     Playlist *o;
     for(int i=0;i<playlists.getSize();i++){
@@ -106,7 +100,6 @@ Playlist *Profile::getPlaylist(int playlistId) {
 }
 
 LinkedList<Playlist *> Profile::getSharedPlaylists() {
-    /* TODO */
     LinkedList<Playlist*> p1;
     Node<Playlist> *p;
     Node<Profile*> *jt = following.getFirstNode();
@@ -126,7 +119,6 @@ LinkedList<Playlist *> Profile::getSharedPlaylists() {
 }
 
 void Profile::shufflePlaylist(int playlistId, int seed) {
-    /* TODO */
     Node<Playlist> *p = playlists.getFirstNode();
     for(int i=0; i<playlists.getSize();i++){
         if(p->data.getPlaylistId() == playlistId){
@@ -138,7 +130,6 @@ void Profile::shufflePlaylist(int playlistId, int seed) {
 }
 
 void Profile::sharePlaylist(int playlistId) {
-    /* TODO */
     Node<Playlist> *p = playlists.getFirstNode();
     for(int i=0;i<playlists.getSize();i++){
         if((p->data).getPlaylistId() == playlistId){
@@ -150,7 +141,6 @@ void Profile::sharePlaylist(int playlistId) {
 }
 
 void Profile::unsharePlaylist(int playlistId) {
-    /* TODO */
     Node<Playlist> *p = playlists.getFirstNode();
     for(int i=0;i<playlists.getSize();i++){
         if((p->data).getPlaylistId() == playlistId){

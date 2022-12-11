@@ -8,7 +8,7 @@
 #include "Song.h"
 
 class MusicStream {
-public: // DO NOT CHANGE THIS PART.
+public:
     MusicStream() {}
 
     void addProfile(const std::string &email, const std::string &username, SubscriptionPlan plan);
@@ -37,9 +37,9 @@ public: // DO NOT CHANGE THIS PART.
 
     void print() const;
 
-private: // YOU MAY ADD YOUR OWN UTILITY MEMBER FUNCTIONS HERE.
+private:
 
-private: // DO NOT CHANGE THIS PART.
+private:
     LinkedList<Profile> profiles;
     LinkedList<Artist> artists;
     LinkedList<Album> albums;

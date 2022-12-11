@@ -1,7 +1,6 @@
 #ifndef PROFILE_H
 #define PROFILE_H
 
-// DO NOT CHANGE THIS FILE.
 
 #include <iostream>
 

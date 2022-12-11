@@ -1,7 +1,6 @@
 #ifndef ARTIST_H
 #define ARTIST_H
 
-// DO NOT CHANGE THIS FILE.
 
 #include <iostream>
 

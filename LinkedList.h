@@ -7,7 +7,7 @@
 
 template<class T>
 class LinkedList {
-public: // DO NOT CHANGE THIS PART.
+public:
     LinkedList();
     LinkedList(const LinkedList<T> &obj);
 
@@ -39,9 +39,9 @@ public: // DO NOT CHANGE THIS PART.
 
     LinkedList<T> &operator=(const LinkedList<T> &rhs);
 
-private: // YOU MAY ADD YOUR OWN UTILITY MEMBER FUNCTIONS HERE.
+private:
 
-private: // DO NOT CHANGE THIS PART.
+private:
     Node<T> *head;
 
     int size;
@@ -448,7 +448,6 @@ void LinkedList<T>::swap(Node<T> *node1, Node<T> *node2) {
 
 template<class T>
 void LinkedList<T>::shuffle(int seed) {
-    /* TODO */
     for(int i=0;i<size;i++){
         swap(getNodeAtIndex(i),getNodeAtIndex((i*i+seed)%size));
     }

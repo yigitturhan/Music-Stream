@@ -1,7 +1,6 @@
 #ifndef NODE_H
 #define NODE_H
 
-// DO NOT CHANGE THIS FILE.
 
 #include <iostream>
 

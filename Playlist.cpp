@@ -31,17 +31,14 @@ void Playlist::setShared(bool shared) {
 }
 
 void Playlist::addSong(Song *song) {
-    /* TODO */
     songs.insertAtTheEnd(song);
 }
 
 void Playlist::dropSong(Song *song) {
-    /* TODO */
     songs.removeNode(song);
 }
 
 void Playlist::shuffle(int seed) {
-    /* TODO */
     songs.shuffle(seed);
 }
 
